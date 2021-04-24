@@ -74,7 +74,7 @@ export class App extends Component {
                         <Stack.Screen
                             name="Landing"
                             component={LandingScreen}
-                            options={{ headerShown: false }}
+                            /*options={{ headerShown: false }}*/
                         />
                         <Stack.Screen
                             name="Register"
@@ -92,7 +92,7 @@ export class App extends Component {
                         <Stack.Screen
                             name="Main"
                             component={MainScreen}
-                            options={{ headerShown: false }}
+                            /*options={{ headerShown: false }}*/
                         />
                         <Stack.Screen
                             name="Add"
