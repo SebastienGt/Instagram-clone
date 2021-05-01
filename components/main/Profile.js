@@ -25,6 +25,9 @@ function Profile(props) {
                 .get()
                 .then((snapshot) => {
                     if (snapshot.exists) {
+                        console.log(
+                            'On regarde les données du serveur pour le nom et les données'
+                        );
                         setUser(snapshot.data());
                     } else {
                         console.log('snapshot does not exist');
@@ -40,6 +43,9 @@ function Profile(props) {
                 .orderBy('creation', 'asc')
                 .get()
                 .then((snapshot) => {
+                    console.log(
+                        'On regarde les données pour les posts du profil'
+                    );
                     let posts = snapshot.docs.map((doc) => {
                         const data = doc.data();
                         const id = doc.id;
